@@ -1,0 +1,827 @@
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+.logo-child3 {
+  position: relative;
+  width: 73.25px;
+  height: 56.69px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.span15 {
+  color: var(--color-mediumblue);
+}
+.med6 {
+  color: var(--color-navy);
+}
+.rktg-med6 {
+  position: relative;
+  text-shadow: 0 2.5477707386016846px 2.55px rgba(0, 0, 0, 0.25);
+}
+.logo-wrapper,
+.logo6 {
+  position: absolute;
+  width: 113.46px;
+  height: 95.54px;
+}
+.logo6 {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo-wrapper {
+  top: 33.12px;
+  left: 71.01px;
+  text-align: center;
+  font-size: 17.83px;
+  color: var(--color-darkblue);
+}
+.group-wrapper,
+.home18 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home18 {
+  font-size: 17.83px;
+  font-family: var(--font-inria-serif);
+  color: var(--color-black);
+  text-align: center;
+}
+.group-wrapper {
+  width: 50px;
+  height: 21px;
+}
+.home-inner {
+  position: relative;
+  width: 50px;
+  height: 21px;
+  flex-shrink: 0;
+}
+.home17 {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.book-an-appointment13,
+.home17 {
+  cursor: pointer;
+}
+.about-us13,
+.book-an-appointment13 {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+}
+.home-page-inner,
+.nav-buttons-wrapper,
+.nav-buttons6 {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  /* left: calc(50% - 365.82px); */
+  width: 731.64px;
+}
+.nav-buttons6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 28.66px;
+}
+.home-page-inner,
+.nav-buttons-wrapper {
+  height: 21px;
+}
+.home-page-inner {
+  top: 49.68px;
+  left: calc(50% - 373.89px);
+  text-align: center;
+  font-size: 17.83px;
+  color: var(--color-black);
+}
+.home-page-child,
+.home-page-item {
+  position: absolute;
+  top: 25.48px;
+  left: 202.75px;
+  width: 1.91px;
+  height: 85.99px;
+  object-fit: cover;
+}
+.home-page-item {
+  top: 130.75px;
+  left: 60px;
+  width: 1160px;
+  height: 1.91px;
+}
+
+
+
+.group-button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 159.87px;
+  height: 73.25px;
+}
+.group-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 31.85px;
+  right: 61.78px;
+}
+.dont-self-medicate-talk {
+  position: relative;
+}
+.dont-self-medicate-talk-to-a-wrapper {
+  margin: 0;
+  position: absolute;
+  top: 156.69px;
+  left: 26.11px;
+  display: flex;
+  flex-direction: row;
+  padding: 6.369426727294922px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: inherit;
+  color: var(--color-navy);
+  font-family: inherit;
+}
+.home-page-child1 {
+  position: absolute;
+  top: 509.55px;
+  left: 26.11px;
+  width: 1168.79px;
+  height: 1.27px;
+  object-fit: cover;
+}
+.tired-of-waiting {
+  position: absolute;
+  top: 566.24px;
+  left: 542.68px;
+  font-weight: 700;
+  color: #d51717;
+  display: inline-block;
+  width: 621.66px;
+  height: 58.6px;
+}
+.order-medicines-from {
+  margin-block-start: 0;
+  margin-block-end: 5.73px;
+}
+.home-delivery-in {
+  margin: 0;
+}
+.order-medicines-from-container {
+  position: absolute;
+  top: 647.13px;
+  left: 542.68px;
+  font-size: 18.47px;
+  color: #3f3f3f;
+  display: inline-block;
+  width: 527.39px;
+  height: 73.89px;
+}
+.order-now-button-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 11.46px;
+  background-color: #4a55ed;
+  width: 175.8px;
+  height: 45.86px;
+}
+.order-now {
+  position: absolute;
+  top: 5.73px;
+  left: 15.92px;
+}
+.order-now-button {
+  text-decoration: none;
+  position: absolute;
+  top: 721.02px;
+  left: 587.9px;
+  width: 175.8px;
+  height: 45.86px;
+  color: inherit;
+}
+.data-banner-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #404040;
+  width: 1222.93px;
+  height: 133.12px;
+}
+.b{
+  position: absolute;
+  top: 31.91px;
+  left: 169px;
+  font-size: 28.03px;
+  font-weight: 700;
+  display: inline-block;
+  width: 246px;
+  height: 39px;
+}
+.happy-users,
+.specialities,
+.verified-doctors {
+  position: absolute;
+  top: 73.89px;
+  left: 155.41px;
+  display: inline-block;
+  width: 152.87px;
+  height: 31.85px;
+}
+.specialities,
+.verified-doctors {
+  top: 70.7px;
+  left: 521.66px;
+  width: 185.35px;
+  height: 31.21px;
+}
+.specialities {
+  top: 71.34px;
+  left: 873.25px;
+  width: 175.16px;
+  height: 28.03px;
+}
+.data-banner {
+  position: absolute;
+  top: 828.66px;
+  left: 0;
+  width: 1222.93px;
+  height: 133.12px;
+  font-size: 22.93px;
+}
+.top-rated-doctors-child,
+.top-rated-doctors-inner,
+.top-rated-doctors-item {
+  position: absolute;
+  top: 132.48px;
+  left: 0;
+  border-radius: 35.03px;
+  background-color: var(--color-darkturquoise);
+  width: 262.42px;
+  height: 134.39px;
+}
+.top-rated-doctors-inner,
+.top-rated-doctors-item {
+  left: 371.97px;
+}
+.top-rated-doctors-inner {
+  left: 743.95px;
+}
+.dr-dennis-miller {
+  margin: 0;
+  font-size: 22.93px;
+}
+.dr-dennis-miller-container {
+  position: absolute;
+  top: 187.26px;
+  left: 42.04px;
+}
+.dr-bary-cohen-container,
+.dr-william-collins-container {
+  position: absolute;
+  top: 187.26px;
+  left: 414.65px;
+}
+.dr-william-collins-container {
+  left: 777.07px;
+}
+.ellipse-icon,
+.top-rated-doctors-child1,
+.top-rated-doctors-child2 {
+  position: absolute;
+  top: 77.07px;
+  left: 76.43px;
+  width: 109.55px;
+  height: 110.19px;
+  object-fit: cover;
+}
+.top-rated-doctors-child1,
+.top-rated-doctors-child2 {
+  left: 448.41px;
+}
+.top-rated-doctors-child2 {
+  left: 820.38px;
+}
+.our-doctors {
+  position: absolute;
+  top: 0;
+  left: 349.04px;
+  font-size: 30.57px;
+  display: inline-block;
+  width: 308.92px;
+  height: 77.07px;
+}
+.top-rated-doctors {
+  position: absolute;
+  top: 1009.55px;
+  left: 100.64px;
+  width: 1006.37px;
+  height: 266.88px;
+  text-align: center;
+  font-size: 19.11px;
+  color: var(--color-black);
+}
+.hp-appointment-banner-child {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 1198px;
+  height: 265px;
+  object-fit: cover;
+}
+.skip-the-travel-container {
+  margin: 0;
+  position: absolute;
+  top: 48.21px;
+  left: 107.46px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 464.97px;
+  height: 103.82px;
+}
+.book-appointment-button-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8.28px;
+  width: 168.15px;
+  height: 33.76px;
+}
+.consult-now {
+  position: absolute;
+  top: 5.73px;
+  left: 28.66px;
+}
+.book-appointment-button {
+  text-decoration: none;
+  position: absolute;
+  top: 177.51px;
+  left: 106.82px;
+  width: 168.15px;
+  height: 33.76px;
+  font-size: 18.47px;
+  color: var(--color-white);
+}
+.book-appointment-button:hover {
+  animation: 1s ease 0s 1 normal none shadow-drop-bottom;
+  opacity: 1;
+}
+.hp-appointment-banner-item {
+  border: 0;
+  background-color: transparent;
+  font-size: 16.56px;
+  top: 138.65px;
+  left: 106.82px;
+  width: 644.59px;
+  height: 48.41px;
+}
+.hp-appointment-banner,
+.hp-appointment-banner-item,
+.symbols-text {
+  position: absolute;
+  font-family: var(--font-inria-serif);
+}
+.symbols-text {
+  border: 0;
+  background-color: transparent;
+  font-size: 14.01px;
+  top: 222.09px;
+  left: 99.18px;
+  width: 357.96px;
+  height: 28.03px;
+}
+.hp-appointment-banner {
+  top: 213.58px;
+  left: -3px;
+  width: 1198px;
+  height: 265px;
+  text-align: left;
+  font-size: 29.3px;
+  color: var(--color-black);
+}
+.unsplashipx7j1n-xuc-icon1,
+.unsplashqnrjcp90tvc-icon {
+  position: absolute;
+  top: 649.68px;
+  left: 943.95px;
+  width: 217.83px;
+  height: 139.49px;
+  object-fit: cover;
+}
+.unsplashqnrjcp90tvc-icon {
+  top: 543.95px;
+  left: 40.13px;
+  width: 436.31px;
+  height: 245.22px;
+}
+.footer-child1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 218.13px;
+}
+.vector-icon25,
+.vector-icon26 {
+  position: absolute;
+  height: 16.06%;
+  width: 3.75%;
+  top: 50.96%;
+  /* right: 25.89%; */
+  bottom: 32.98%;
+  left: 890px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon26 {
+  width: 2.86%;
+  top: 26.43%;
+  /* right: 26.56%; */
+  bottom: 57.51%;
+  /* left: 70.57%; */
+}
+.a7,
+.inforktgmednet6 {
+  text-decoration: none;
+  position: absolute;
+  top: 61.13px;
+  left: 947px;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  width: 185px;
+  height: 37px;
+}
+.inforktgmednet6 {
+  top: 110.13px;
+  left: 952px;
+  width: 248px;
+  height: 36px;
+}
+.icon5 {
+  position: absolute;
+  top: 13.06px;
+  left: 135.67px;
+  border-radius: 6.37px;
+  width: 90.45px;
+  height: 79.62px;
+  object-fit: cover;
+}
+.this-website-provides6 {
+  position: absolute;
+  top: 102.23px;
+  left: 47.77px;
+  font-size: 16.56px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 306.37px;
+  height: 84.71px;
+}
+.home-book-an-container11 {
+  line-break: anywhere;
+  width: 100%;
+}
+.home-book-an-container10 {
+  position: absolute;
+  top: 46.82px;
+  left: 441.4px;
+  font-size: 16.56px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 306.37px;
+  height: 152.87px;
+}
+.home-book-an-container10 p a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.contact-us20,
+.quick-links5 {
+  position: absolute;
+  top: 19.43px;
+  left: 519.75px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  width: 205.1px;
+  height: 35.67px;
+}
+.contact-us20 {
+  top: 18.79px;
+  left: 926.75px;
+}
+.footer-child2,
+.footer-child3 {
+  position: absolute;
+  top: 13.06px;
+  left: 389.81px;
+  width: 2.55px;
+  height: 188.54px;
+  object-fit: cover;
+}
+.footer-child3 {
+  left: 814.01px;
+}
+.vector-icon27,
+.vector-icon28 {
+  position: absolute;
+  height: 13.35%;
+  width: 2.39%;
+  top: 77.99%;
+  /* right: 14.28%; */
+  bottom: 8.66%;
+  left: 83.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon28 {
+  height: 16.06%;
+  width: 2.86%;
+  top: 76.62%;
+  /* right: 9.72%; */
+  bottom: 7.32%;
+  left: 87.42%;
+}
+.follow-us6 {
+  position: absolute;
+  top: 162.1px;
+  left: 845.22px;
+  font-size: 25.48px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150.96px;
+  height: 45.22px;
+}
+.footer1 {
+  position: absolute;
+  top: 1647.45px;
+  left: 0;
+  width: 1200px;
+  height: 218.13px;
+  text-align: left;
+  font-size: 21.66px;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.specialities2 {
+  position: absolute;
+  top: 0;
+  left: 310.19px;
+  font-size: 30.57px;
+  display: inline-block;
+  width: 305.73px;
+  height: 57.96px;
+}
+.specialities-child,
+.specialities-child1,
+.specialities-child2,
+.specialities-inner,
+.specialities-item {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 57.96px;
+  left: 0;
+  box-shadow: 0 2.5477707386016846px 2.55px rgba(0, 0, 0, 0.25);
+  width: 139.49px;
+  height: 176.43px;
+}
+.specialities-child1,
+.specialities-child2,
+.specialities-inner,
+.specialities-item {
+  left: 200.64px;
+}
+.specialities-child1,
+.specialities-child2,
+.specialities-inner {
+  left: 401.27px;
+}
+.specialities-child1,
+.specialities-child2 {
+  left: 601.91px;
+}
+.specialities-child2 {
+  left: 802.55px;
+}
+.specialities-child3 {
+  position: absolute;
+  top: 73.25px;
+  left: 24.84px;
+  width: 89.17px;
+  height: 89.17px;
+  object-fit: cover;
+}
+.specialities-child4,
+.specialities-child5,
+.specialities-child6,
+.specialities-child7 {
+  position: absolute;
+  top: 77.07px;
+  left: 226.11px;
+  width: 89.17px;
+  height: 89.17px;
+  object-fit: cover;
+}
+.specialities-child5,
+.specialities-child6,
+.specialities-child7 {
+  top: 73.25px;
+  left: 426.11px;
+}
+.specialities-child6,
+.specialities-child7 {
+  left: 626.75px;
+}
+.specialities-child7 {
+  left: 827.39px;
+}
+.dermatology,
+.general-physician,
+.gynaecology,
+.sexology,
+.stomach-and-digestion {
+  position: absolute;
+  top: 189.17px;
+  left: 0;
+  display: inline-block;
+  width: 139.49px;
+  height: 38.22px;
+}
+.general-physician,
+.gynaecology,
+.sexology,
+.stomach-and-digestion {
+  top: 177.07px;
+  left: 198.09px;
+}
+.gynaecology,
+.sexology,
+.stomach-and-digestion {
+  top: 189.17px;
+  left: 401.27px;
+}
+.sexology,
+.stomach-and-digestion {
+  left: 601.91px;
+}
+.stomach-and-digestion {
+  top: 180.25px;
+  left: 802.55px;
+}
+.group-icon5 {
+  position: absolute;
+  top: 7.03px;
+  right: 92.66px;
+  width: 54.69px;
+  height: 52.19px;
+}
+.login-sign5 {
+  position: absolute;
+  top: 13.75px;
+  left: 63.75px;
+  font-size: var(--font-size-mid-5);
+  font-weight: 700;
+  font-family: var(--font-inria-serif);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 75.63px;
+  height: 34.38px;
+}
+
+
+.login-button5 {
+    position: absolute;
+    width: 156.88px;
+    height: 71.88px;
+    cursor: pointer;
+    border: 1.8px solid var(--color-black);
+    border-radius: 1%;
+    padding: 0;
+    background-color: var(--color-gainsboro-100);
+    position: absolute;
+    top: -25px;
+    left: 760px;
+  }
+.specialities1 {
+  position: absolute;
+  top: 1319.11px;
+  left: 140.76px;
+  width: 942.04px;
+  height: 234.39px;
+  text-align: center;
+  font-size: 19.11px;
+  color: var(--color-black);
+}
+.b1,
+.b2 {
+  position: absolute;
+  top: 860.51px;
+  left: 566.88px;
+  display: inline-block;
+  width: 222.29px;
+  height: 47.77px;
+}
+.b2 {
+  left: 920.38px;
+  font-weight: 700;
+  width: 77.07px;
+}
+.home-page {
+  position: relative;
+  margin-left: 90px;
+  margin-right: -10px;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1868.15px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 28.03px;
+  color: var(--color-white);
+  font-family: var(--font-inria-serif);
+}
+/* @media screen and (max-width: 1200px) {
+  .login-button5 {
+    width: 220px;
+  }
+  .skip-the-travel-container {
+    font-size: 42px;
+  }
+  .book-appointment-button{
+    width: 240px;
+    height: 50px;
+  }
+  .symbols-text {
+    width: 700px;
+    height: 44px;
+  }
+  .hp-appointment-banner {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .login-button5 {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .nav-buttons6 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .login-button5 {
+    width: 130px;
+  }
+  .skip-the-travel-container {
+    font-size: 34px;
+  }
+  .book-appointment-button {
+    width: 160px;
+    height: 50px;
+  }
+  .hp-appointment-banner-item {
+    width: 750px;
+    height: 85px;
+  }
+  .symbols-text {
+    width: 300px;
+    height: 40px;
+  }
+  .unsplashqnrjcp90tvc-icon {
+    width: 685px;
+  }
+} */

@@ -1,0 +1,631 @@
+.rectangle-icon {
+  position: relative;
+  width: 71.88px;
+  height: 55.63px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.rktg3 {
+  color: var(--color-darkblue);
+}
+.span11 {
+  color: var(--color-mediumblue);
+}
+.med2,
+.rktg2 {
+  font-family: var(--font-inria-serif);
+}
+.med2 {
+  color: var(--color-navy);
+}
+.rktg-med2 {
+  position: relative;
+  font-size: var(--font-size-mid-5);
+  text-align: center;
+  text-shadow: 0 2.5px 2.5px rgba(0, 0, 0, 0.25);
+}
+.logo2 {
+  position: absolute;
+  top: 7.5px;
+  left: 30.63px;
+  width: 112.5px;
+  height: 93.75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home6 {
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-mid-5);
+  font-weight: 700;
+  font-family: var(--font-inria-serif);
+  color: var(--color-black);
+  text-align: center;
+}
+.home5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.book-an-appointment3 {
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.book-an-appointment3,
+.medshop4 {
+  position: relative;
+  font-size: var(--font-size-mid-5);
+  font-family: var(--font-inria-serif);
+  color: var(--color-black);
+  text-align: center;
+}
+.nav-buttons2 {
+  position: absolute;
+  top: 28.13px;
+  left: 215px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 28.13px;
+}
+.line-icon {
+  position: absolute;
+  top: 0;
+  left: 161.25px;
+  width: 1.88px;
+  height: 84.38px;
+  object-fit: cover;
+}
+.nav-bar-child1,
+.nav-bar2 {
+  position: absolute;
+  width: 1145px;
+}
+.nav-bar-child1 {
+  top: 99.38px;
+  left: 0;
+  height: 1.88px;
+  object-fit: cover;
+}
+.nav-bar2 {
+  top: 25px;
+  left: 27.5px;
+  height: 101.25px;
+}
+.group-icon1 {
+  position: absolute;
+  top: 7.03px;
+  right: 92.66px;
+  width: 54.69px;
+  height: 52.19px;
+}
+.login-sign1 {
+  position: absolute;
+  top: 13.75px;
+  left: 63.75px;
+  font-size: var(--font-size-mid-5);
+  font-weight: 700;
+  font-family: var(--font-inria-serif);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 75.63px;
+  height: 34.38px;
+}
+.login-button1 {
+    position: absolute;
+    width: 156.88px;
+    height: 71.88px;
+    cursor: pointer;
+    border: 1.8px solid var(--color-black);
+    border-radius: 1%;
+    padding: 0;
+    background-color: var(--color-gainsboro-100);
+    position: absolute;
+    top: 4px;
+    left: 978px;
+  }
+
+.medshop-child {
+  border: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 160px;
+  left: 188.75px;
+  box-shadow: 0 2.5px 2.5px rgba(0, 0, 0, 0.25);
+  width: 516.88px;
+  height: 27.5px;
+}
+.search-for-medicines {
+  position: absolute;
+  top: 161.88px;
+  left: 226.25px;
+  font-size: var(--font-size-mid-5);
+  color: #919191;
+  display: inline-block;
+  width: 425px;
+  height: 38.13px;
+}
+.material-symbolssearch-icon {
+  position: absolute;
+  top: 165px;
+  left: 663.75px;
+  width: 23.75px;
+  height: 25px;
+  overflow: hidden;
+}
+.medshop-item {
+  position: absolute;
+  top: 228.75px;
+  left: 0;
+  width: 1200px;
+  height: 183.13px;
+  object-fit: cover;
+}
+.reliable-on-time {
+  position: absolute;
+  top: 268.13px;
+  left: 188.75px;
+  font-size: var(--font-size-3xl-5);
+  font-weight: 700;
+  display: inline-block;
+  width: 375px;
+  height: 40.63px;
+}
+.fast-healthcare,
+.our-in-house-pharmacists,
+.popular-products {
+  position: absolute;
+  font-size: var(--font-size-mid-5);
+  display: inline-block;
+}
+.fast-healthcare {
+  top: 238.75px;
+  left: 188.75px;
+  color: #03257b;
+  width: 194.38px;
+  height: 31.25px;
+}
+.our-in-house-pharmacists,
+.popular-products {
+  top: 315.63px;
+  left: 185px;
+  width: 481.88px;
+  height: 40.63px;
+}
+.popular-products {
+  top: 451.88px;
+  left: 191.25px;
+  font-family: var(--font-inter);
+  width: 185px;
+  height: 24.38px;
+}
+.medshop-child1,
+.medshop-child2,
+.medshop-child3,
+.medshop-inner,
+.rectangle-div {
+  position: absolute;
+  top: 496.25px;
+  left: 188.75px;
+  background-color: var(--color-white);
+  box-shadow: 0 2.5px 2.5px rgba(0, 0, 0, 0.25);
+  width: 135px;
+  height: 166.88px;
+}
+.medshop-child1,
+.medshop-child2,
+.medshop-child3,
+.rectangle-div {
+  left: 376.25px;
+}
+.medshop-child1,
+.medshop-child2,
+.medshop-child3 {
+  left: 563.75px;
+}
+.medshop-child2,
+.medshop-child3 {
+  left: 751.25px;
+}
+.medshop-child3 {
+  left: 938.75px;
+}
+.medshop-child4,
+.medshop-child5,
+.medshop-child6,
+.medshop-child7,
+.medshop-child8 {
+  position: absolute;
+  top: 496.25px;
+  left: 186.25px;
+  width: 140px;
+  height: 171.88px;
+  object-fit: cover;
+}
+.medshop-child5,
+.medshop-child6,
+.medshop-child7,
+.medshop-child8 {
+  left: 373.75px;
+}
+.medshop-child6,
+.medshop-child7,
+.medshop-child8 {
+  left: 561.25px;
+}
+.medshop-child7,
+.medshop-child8 {
+  left: 748.75px;
+}
+.medshop-child8 {
+  left: 936.25px;
+}
+.medshop-child9 {
+  position: absolute;
+  top: 601.25px;
+  left: 196.25px;
+  width: 118.75px;
+  height: 0.63px;
+}
+.medshop-child10,
+.medshop-child11,
+.medshop-child12,
+.medshop-child13 {
+  position: absolute;
+  top: 601.25px;
+  left: 383.75px;
+  width: 118.75px;
+  height: 0.63px;
+}
+.medshop-child11,
+.medshop-child12,
+.medshop-child13 {
+  left: 571.25px;
+}
+.medshop-child12,
+.medshop-child13 {
+  left: 758.75px;
+}
+.medshop-child13 {
+  left: 946.25px;
+}
+.zincovit-tablet {
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+.rs-10500 {
+  margin: 0;
+}
+.moov-spray-80gm-container,
+.zincovit-tablet-rs-container {
+  position: absolute;
+  top: 610.63px;
+  left: 195px;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+}
+.moov-spray-80gm-container {
+  left: 382.5px;
+}
+.dettol-antiseptic-liquid-container,
+.electral-powder-rs-container,
+.shelcal-500mg-tablet-container {
+  position: absolute;
+  top: 610.63px;
+  left: 570px;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+}
+.electral-powder-rs-container,
+.shelcal-500mg-tablet-container {
+  left: 757.5px;
+}
+.electral-powder-rs-container {
+  left: 945px;
+}
+.medshop-child14,
+.medshop-child15 {
+  position: absolute;
+  top: 496.25px;
+  left: 210.63px;
+  width: 90.63px;
+  height: 100px;
+  object-fit: cover;
+}
+.medshop-child15 {
+  left: 398.13px;
+}
+.medshop-child16,
+.medshop-child17,
+.medshop-child18 {
+  position: absolute;
+  top: 496.25px;
+  left: 585.63px;
+  width: 81.25px;
+  height: 84.38px;
+  object-fit: cover;
+}
+.medshop-child17,
+.medshop-child18 {
+  left: 773.13px;
+  width: 90.63px;
+  height: 100px;
+}
+.medshop-child18 {
+  left: 960.63px;
+}
+.rectangle-footer {
+  position: absolute;
+  top: 755.63px;
+  left: 0;
+  background-color: var(--color-gray-100);
+  width: 1200px;
+  height: 218.13px;
+}
+.vector-icon4,
+.vector-icon5 {
+  position: absolute;
+  height: 3.53%;
+  width: 3.75%;
+  top: 88.85%;
+  left: 847px;
+  /* right: 25.89%; */
+  bottom: 7.63%;
+  left: 875px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon5 {
+  width: 2.86%;
+  top: 83.46%;
+  right: 26.56%;
+  bottom: 13.01%;
+  left: 880px;
+}
+.a1,
+.inforktgmednet1 {
+  text-decoration: none;
+  position: absolute;
+  top: 817.5px;
+  left: 929px;
+  font-size: 21.25px;
+  font-weight: 700;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  display: inline-block;
+  width: 189px;
+  height: 36px;
+}
+.inforktgmednet1 {
+  top: 865.5px;
+  left: 934px;
+  width: 239px;
+  height: 35px;
+}
+.icon1 {
+  position: absolute;
+  top: 770px;
+  left: 133.13px;
+  border-radius: 6.25px;
+  width: 88.75px;
+  height: 78.13px;
+  object-fit: cover;
+}
+.this-website-provides1 {
+  position: absolute;
+  top: 857.5px;
+  left: 46.88px;
+  font-size: 16.25px;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300.63px;
+  height: 83.13px;
+}
+.home-book-an-container3 {
+  line-break: anywhere;
+  width: 100%;
+
+}
+.contact-us6,
+.home-book-an-container2,
+.quick-links1 {
+  position: absolute;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+}
+.home-book-an-container2 {
+  top: 803.13px;
+  left: 433.13px;
+  font-size: 16.25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 300.63px;
+  height: 150px;
+}
+
+.home-book-an-container3 p a {
+  text-decoration: none;
+  color: aliceblue;
+  line-break: anywhere;
+  width: 100%; 
+}
+
+.contact-us6,
+.quick-links1 {
+  top: 776.25px;
+  left: 510px;
+  font-size: 21.25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  width: 201.25px;
+  height: 35px;
+}
+.contact-us6 {
+  top: 775.63px;
+  left: 909.38px;
+}
+.medshop-child19,
+.medshop-child20 {
+  position: absolute;
+  top: 770px;
+  left: 382.5px;
+  width: 2.5px;
+  height: 185px;
+  object-fit: cover;
+}
+.medshop-child20 {
+  left: 798.75px;
+}
+.vector-icon6,
+.vector-icon7 {
+  position: absolute;
+  height: 2.93%;
+  width: 2.39%;
+  top: 94.81%;
+  left: 987.5px;
+  /* right: 15.32%; */
+  bottom: 2.26%;
+  left: 980px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon7 {
+  height: 3.53%;
+  width: 2.86%;
+  top: 94.62%;
+  right: 11.15%;
+  bottom: 1.86%;
+  left: 1025px;
+}
+.unsplashipx7j1n-xuc-icon{
+  position: absolute;
+  top: 228.75px;
+  left: 868.13px;
+  width: 237.5px;
+  height: 183.13px;
+  object-fit: cover;
+}
+.follow-us1 {
+  position: absolute;
+  top: 916.25px;
+  left: 829.38px;
+  font-size: var(--font-size-6xl);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 148.13px;
+  height: 44.38px;
+}
+.material-symbolsshopping-cart {
+  position: absolute;
+  top: 3.13px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 36.25px;
+  height: 36.88px;
+  overflow: hidden;
+  mix-blend-mode: normal;
+}
+.vector-icon8 {
+  position: absolute;
+  height: 63.03%;
+  width: 13.09%;
+  top: 16.67%;
+  right: 66.59%;
+  bottom: 20.3%;
+  left: 20.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.order {
+  position: absolute;
+  top: 9.38px;
+  left: 65px;
+  /* display: inline-block; */
+  text-decoration: none;
+  width: 127.5px;
+  height: 39.38px;
+}
+.your-cart-button-child {
+  position: absolute;
+  top: 0;
+  left: 28.75px;
+  width: 0.63px;
+  height: 45.63px;
+  object-fit: cover;
+}
+.your-cart-button-inner,
+.your-cart-button-item {
+  position: absolute;
+  top: 45px;
+  left: 28.75px;
+  width: 160px;
+  height: 1.25px;
+}
+.your-cart-button-inner {
+  top: -0.62px;
+  height: 0.63px;
+  object-fit: cover;
+}
+.your-cart-button-child1 {
+  position: absolute;
+  top: 0;
+  left: 188.44px;
+  width: 0.63px;
+  height: 45.63px;
+}
+.your-cart-button {
+  position: absolute;
+  top: 151.88px;
+  left: 898.75px;
+  width: 230.63px;
+  height: 48.75px;
+  font-size: var(--font-size-xl);
+}
+.medshop3 {
+  position: relative;
+  margin-left: 85px;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 975px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-smi-5);
+  color: var(--color-black);
+  font-family: var(--font-inria-serif);
+}
+form button{
+  position: absolute;
+  top: 161px;
+  left: 641px;
+  height: 28px;
+  width: 65px;
+  background-color: #FFFFFF;
+  border: none;
+}
+form button:hover{
+  cursor: auto;
+  color: red;
+}
+
