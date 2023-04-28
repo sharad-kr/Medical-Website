@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{url_for('static',filename='global.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='contact-us.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria Serif:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <main class="contact-us7">
+      <div class="contact-us-child"></div>
+      <nav class="nav-bar3">
+        <div class="logo3">
+          <img class="logo-child1" alt="" src="{{url_for('static',filename='rectangle-1@2x.png')}}" /><b
+            class="rktg-med3"
+            ><span class="rktg4"
+              ><span class="rktg5">RKTG</span
+              ><span class="span12"> </span></span
+            ><b class="med3">MED</b></b
+          >
+        </div>
+        <div class="nav-buttons3">
+          <button class="home8" id="home"><b class="home9">Home</b></button
+          ><a
+            class="book-an-appointment5"
+            href="http://127.0.0.1:5000/select-speciality"
+            id="bookAnAppointment"
+            >Book An Appointment</a
+          ><a class="book-an-appointment5" href="http://127.0.0.1:5000/med-detail" id="medShop"
+            >MedShop</a
+          ><a class="about-us5" href="http://127.0.0.1:5000/about-us">About Us</a
+          ><b class="home9">Contact Us</b><a class="home9" href ="http://127.0.0.1:5000/get-user" style="text-decoration: none;">Profile</a>
+        </div>
+        <img class="nav-bar-child2" alt="" src="{{url_for('static',filename='line-1@2x.png')}}" /><img
+          class="nav-bar-child3"
+          alt=""
+          src="{{url_for('static',filename='line-2@2x.png')}}"
+        />
+        {% if session['user_name'] is none %}
+        <a class="login-button2" href="http://127.0.0.1:5000/user/log-in">
+          <img class="group-icon2" alt="" src="{{url_for('static',filename='group1.svg')}}" /><b
+            class="login-sign2"
+            >Login / Sign Up</b
+        ></a>
+        {% else %}
+        <button class="logout" onclick="logout()">
+          <img
+            src="{{url_for('static',filename='logout.png')}}"
+            width="50px"
+            height="60px"
+          />
+        </button>
+        {% endif %}
+      </nav>
+
+      ><b class="contact-us9">Contact us</b>
+      <div class="phenvelope-simple-light1"></div>
+      <img class="vector-icon9" alt="" src="{{url_for('static',filename='vector9.svg')}}" /><img
+        class="gislocationpoi0-icon"
+        alt=""
+        src="{{url_for('static',filename='gislocationpoi0.svg')}}"
+      /><img class="vector-icon10" alt="" src="{{url_for('static',filename='vector10.svg')}}" /><b
+        class="iit-delhi-main"
+        >IIT Delhi Main Rd, IIT Campus, Hauz Khas, New Delhi, Delhi 110016</b
+      ><a class="a2">+91 98123 54321</a
+      ><a class="inforktgmednet2">info@rktgmed.net</a>
+      <div class="phenvelope-simple-light2"></div>
+      <img class="vector-icon11" alt="" src="{{url_for('static',filename='vector.svg')}}" /><img
+        class="vector-icon12"
+        alt=""
+        src="{{url_for('static',filename='vector1.svg')}}"
+      /><a class="a3" href="tel:+91 98123 54321" target="_blank"
+        >+91 98123 54321</a
+      ><a
+        class="inforktgmednet3"
+        href="mailto: info@rktgmed.net"
+        target="_blank"
+        >info@rktgmed.net</a
+      ><img class="icon2" alt="" src="{{url_for('static',filename='15032023-2153-1@2x.png')}}" />
+      <div class="this-website-provides2">
+        This website provides an online medicine purchasing platform. Patients
+        can book a one-to-one appointment with doctors.
+      </div>
+      <div class="home-book-an-container4">
+        <p><br><a href="http://127.0.0.1:5000/home-page" class="one-of-the">Home</a><br>
+          <a  href="http://127.0.0.1:5000/select-speciality" class="one-of-the">Book An Appointment</a><br>
+          <a  href="http://127.0.0.1:5000/med-detail" class="one-of-the">Medshop</a><br>
+          <a  href="http://127.0.0.1:5000/about-us" class="one-of-the">About Us</a><br>
+          <a  href="http://127.0.0.1:5000/contact-us" class="one-of-the">Contact Us</a><br>
+          <a  href="http://127.0.0.1:5000/get-user" class="one-of-the" id="profile-page">Profile</a></p></span
+        ></b
+        >
+      </div>
+      <b class="quick-links2">Quick Links</b
+      ><b class="contact-us11">Contact us</b>
+      <div class="contact-us-item"></div>
+      <div class="contact-us-inner"></div>
+      <img class="vector-icon13" alt="" src="{{url_for('static',filename='vector11.svg')}}" /><img
+        class="vector-icon14"
+        alt=""
+        src="{{url_for('static',filename='vector2.svg')}}"
+      /><img class="vector-icon15" alt="" src="{{url_for('static',filename='vector12.svg')}}" /><img
+        class="vector-icon16"
+        alt=""
+        src="{{url_for('static',filename='vector3.svg')}}"
+      /><b class="follow-us2">Follow Us :</b
+      ><b class="follow-us3">Follow Us :</b>
+    </main>
+
+    <script>
+      function logout() {
+        window.location.href = "http://127.0.0.1:5000/user/log-out";
+      }
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/home-page";
+        });
+      }
+      
+      var bookAnAppointment = document.getElementById("bookAnAppointment");
+      if (bookAnAppointment) {
+        bookAnAppointment.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/select-speciality";
+        });
+      }
+      
+      var medShop = document.getElementById("medShop");
+      if (medShop) {
+        medShop.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/med-detail";
+        });
+      }
+      
+      var loginButton = document.getElementById("loginButton");
+      if (loginButton) {
+        loginButton.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/user/log-in";
+        });
+      }
+      var Profile = document.getElementById("profile-page");
+      if (Profile) {
+        Profile.addEventListener("click", function (e){
+          window.location.href = "http://127.0.0.1:5000/user/get-user";
+        });
+      }
+
+      </script>
+  </body>
+</html>

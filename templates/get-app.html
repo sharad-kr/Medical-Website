@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table class="appn-table">
+    <thead>
+      <tr>
+        
+        <th>Doctor ID</th>
+        <th>Doctor Name</th>
+        <th>Appointment Date</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data %}
+      <tr>
+       
+        <td>{{ item.Doctor_ID }}</td>
+        <td>{{ item.Doctor_Name }}</td>
+        <td>{{ item.appointment_date }}</td>
+
+        
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

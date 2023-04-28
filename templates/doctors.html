@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{url_for('static',filename='global.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='doctors.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria Serif:wght@400;700&display=swap"
+    />
+    <script src="https://unpkg.com/mustache@4.1.0/mustache.min.js"></script>
+  </head>
+  <body>
+    <div class="profile-page">
+      <div class="nav-bar1">
+        <div class="logo1">
+          <img
+            class="logo-item"
+            alt=""
+            src="{{url_for('static',filename='rectangle-1@2x.png')}}"
+          />
+          <div class="rktg-med1">
+            <span><span>RKTG</span><span class="span10"> </span></span
+            ><b class="med1">MED</b>
+          </div>
+          <div class="logo-inner"></div>
+        </div>
+        <div class="nav-buttons1">
+          <div class="home2" id="homeContainer"><b class="home3">Home</b></div>
+          <b class="book-an-appointment1" id="bookAnAppointment"
+            >Book An Appointment</b
+          ><b class="home3" id="medshop">MedShop</b><b class="home3">About Us</b
+          ><b class="book-an-appointment1" id="contactUsText">Contact Us</b
+          ><b class="home3" id="profile">Profile</b>
+          {% if session['user_name'] is none %}
+          <a
+            id="logged in"
+            href="http://127.0.0.1:5000/user/log-in"
+            class="login-button3"
+            autofocus
+          >
+            <img
+              class="group-icon3"
+              alt=""
+              src="{{url_for('static',filename='group3.svg')}}"
+            /><b class="login-sign3">Login / Sign Up</b>
+          </a>
+          {% else %}
+          <button class="logout" onclick="logout()">
+            <img
+              src="{{url_for('static',filename='logout.png')}}"
+              width="50px"
+              height="60px"
+            />
+          </button>
+          {% endif %}
+        </div>
+        <div class="nav-bar-inner"></div>
+        <div class="line-div"></div>
+      </div>
+
+      <div class="doctors-list">
+        <table class="appn-table">
+          <thead>
+            <tr>
+              {% for key in data[0] %}
+              <th>{{ key }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in data %}
+            <tr>
+              {% for key, value in item.items() %}
+              <td>{{ value }}</td>
+              <!-- <input type="text" a > -->
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <h1 class="header">Available Doctors</h1>
+      <style>
+        .header{
+          position: absolute;
+          top: 110px;
+          left: 240px;
+          color: rgb(123, 210, 213);
+          font-size: 29px;
+        }
+      </style>
+      <h2 class="header2">Book Appointment Here</h2>
+      <style>
+        .header2{
+          position: absolute;
+          top: 155px;
+          left: 845px;
+          font-size: 30px;
+          color: rgb(0, 153, 161);
+        }
+      </style>
+      <div class="book-section">
+        <form
+          id="details"
+          action="/book-an-appointment"
+          method="post"
+          class="formdata"
+        >
+          <input
+            class="inp1"
+            type="date"
+            name="appointment_date"
+            placeholder="Select Date for Appointment"
+            id="app_date"
+            required
+          />
+          <input
+            class="inp2"
+            type="number"
+            name="Doctor_ID"
+            placeholder="Select Doctor ID from Table"
+            required
+          />
+          <!-- <input type="text" placeholder="Type Symptoms" class="symptoms"> -->
+          <textarea
+            type="text"
+            placeholder="Type Symptoms"
+            class="symptoms"
+            name="symptom"
+            rows="2"
+            cols="50"
+          ></textarea>
+          <button class="btn" type="submit">Book Now</button>
+        </form>
+      </div>
+      <img
+        class="vector-icon2"
+        alt=""
+        src="{{url_for('static',filename='vector2.svg')}}"
+      /><img
+        class="vector-icon3"
+        alt=""
+        src="{{url_for('static',filename='vector3.svg')}}"
+      />
+      <div class="follow-us">Follow Us :</div>
+      <h1>Select Date & Book Appointment</h1>
+    </div>
+
+    <script>
+      function logout() {
+        window.location.href = "http://127.0.0.1:5000/user/log-out";
+      }
+      var homeContainer = document.getElementById("homeContainer");
+      if (homeContainer) {
+        homeContainer.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/home-page";
+        });
+      }
+
+      var medShop = document.getElementById("medshop");
+      if (medShop) {
+        medShop.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/med-detail";
+        });
+      }
+
+      var bookAnAppointment = document.getElementById("bookAnAppointment");
+      if (bookAnAppointment) {
+        bookAnAppointment.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/select-speciality";
+        });
+      }
+
+      var contactUsText = document.getElementById("contactUsText");
+      if (contactUsText) {
+        contactUsText.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/contact-us";
+        });
+      }
+
+      var Profile = document.getElementById("profile");
+      if (Profile) {
+        Profile.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/get-user";
+        });
+      }
+      
+
+
+
+    </script>
+  </body>
+</html>

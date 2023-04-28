@@ -1,0 +1,22 @@
+<table class="appn-table">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Drug Name</th>
+        <th>Status</th>
+        <th>Order quantity</th>
+        <th>Expected Dilivery Date</th>  
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data %}
+      <tr></tr>
+        <td>{{ item.order_id}}</td>
+        <td>{{ item.drug_name }}</td>
+        <td>{{ item.status }}</td>
+        <td>{{item.order_quantity}}</td>
+        <td>{{item.shipment_date}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>

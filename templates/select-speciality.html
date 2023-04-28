@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{url_for('static',filename='global.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='book-an-appointment.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria Serif:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <main class="book-an-appointment9">
+      <nav class="nav-bar5">
+        <div class="logo5">
+          <img class="rectangle-a" src="{{url_for('static',filename='group-80@2x.png')}}"></a
+          ><b class="rktg-med5"
+            ><span class="rktg8"
+              ><span class="rktg9">RKTG</span
+              ><span class="span14"> </span></span
+            ><b class="med5">MED</b></b
+          >
+        </div>
+        <div class="nav-buttons5">
+          <div class="home14" id="homeContainer">
+            <a class="home15" href="http://127.0.0.1:5000/home-page">Home</a>
+          </div>
+          <b class="book-an-appointment10">Book An Appointment</b
+          ><a class="medshop10" href="http://127.0.0.1:5000/med-detail" id="medShop">MedShop</a
+          ><a class="home15" href="http://127.0.0.1:5000/about-us">About Us</a
+          ><a class="medshop10" href="http://127.0.0.1:5000/contact-us" id="contactUs">Contact Us</a>
+          <a class="book-an-appointment10" href ="http://127.0.0.1:5000/get-user">Profile</a>
+        </div>
+        <img class="nav-bar-child5" alt="" src="{{url_for('static',filename='line-16@2x.png')}}" />
+        <div class="nav-bar-child6"></div>
+        {% if session['user_name'] is none %}
+        <a href="http://127.0.0.1:5000/user/log-in" class="login-button4" autofocus>
+          <img class="group-icon4" alt="" src="{{url_for('static',filename='group1.svg')}}" /><b
+            class="login-sign4"
+            >Login / Sign Up</b
+        ></a>
+        {% else %}
+        <button class="logout" onclick="logout()">
+          <img
+            src="{{url_for('static',filename='logout.png')}}"
+            width="50px"
+            height="60px"
+          />
+        </button>
+        {% endif %}
+      </nav>
+      
+      <div class="book-an-appointment-child"></div>
+<b class="consult-with-a">Consult with a Doctor</b>
+      <form action="/select-speciality" placeholder="Select Speciality" method="post">
+      <select class="book-an-appointment-inner" name="speciality" id="">
+        <!-- <option value="">Select Speciality</option> -->
+        <option value="Acupuncturist">Acupuncturist</option>
+        <option value="Allergist">Allergist</option>
+        <option value="Surgeon">Surgeon</option>
+        <option value="Internist">Internist</option>
+        <option value="Pediatrician">Pediatrician</option>
+        <option value="Cardiologist">Cardiologist</option>
+        <option value="Dentist">Dentist</option>
+        <option value="Dermatologist">Dermatologist</option>
+        <option value="Endocrinologist">Endocrinologist</option>
+        <option value="Dietitian">Dietitian</option>
+        <option value="Psychiatrist">Psychiatrist</option>
+        <option value="OB-GYN">OB-GYN</option>
+        <option value="Psychotherapist">Psychotherapist</option>
+        <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+        <option value="Hand Surgeon">Hand Surgeon</option>
+        <option value="Physiatrist">Physiatrist</option>
+        <option value="Physical Therapist">Physical Therapist</option>
+        <option value="Anesthesiologist">Anesthesiologist</option>
+        <option value="Radiologist">Radiologist</option>
+        <option value="Shoulder & Elbow Surgeon">Shoulder & Elbow Surgeon</option>
+      </select>
+    <button class="rectangle-button" type="submit">Find Doctors</button>
+    </form>
+      <img class="chat-icon" alt="" src="{{url_for('static',filename='chat.svg')}}" /><b
+        class="free-follow-up"
+        >Free follow-up</b
+      ><img class="comment-icon" alt="" src="{{url_for('static',filename='comment.svg')}}" />
+      <footer class="footer">
+        <div class="footer-child"></div>
+        <img class="vector-icon21" alt="" src="{{url_for('static',filename='vector16.svg')}}" /><img
+          class="vector-icon22"
+          alt=""
+          src="{{url_for('static',filename='vector17.svg')}}"
+        /><a class="a6">+91 98123 54321</a
+        ><a class="inforktgmednet5">info@rktgmed.net</a
+        ><img class="icon4" alt="" src="{{url_for('static',filename='15032023-2153-12@2x.png')}}" />
+        <div class="this-website-provides5">
+          This website provides an online medicine purchasing platform. Patients
+          can book a one-to-one appointment with doctors.
+        </div>
+        <div class="home-book-an-container8">
+          <span class="home-book-an-container9"
+            ><p><br><a href="http://127.0.0.1:5000/home-page" class="one-of-the">Home</a><br>
+              <a  href="http://127.0.0.1:5000/select-speciality" class="one-of-the">Book An Appointment</a><br>
+              <a  href="http://127.0.0.1:5000/med-detail" class="one-of-the">Medshop</a><br>
+              <b  class="one-of-the" id="about-us">About Us</a><br>
+              <a  href="http://127.0.0.1:5000/contact-us" class="one-of-the">Contact Us</a><br>
+              <a  href="http://127.0.0.1:5000/get-user" class="one-of-the">Profile</a></p></span
+            ></b
+          >
+        </div>
+        <b class="quick-links4">Quick Links</b
+        ><b class="contact-us17">Contact us</b>
+        <div class="footer-item"></div>
+        <div class="footer-inner"></div>
+        <img class="vector-icon23" alt="" src="{{url_for('static',filename='vector18.svg')}}" /><img
+          class="vector-icon24"
+          alt=""
+          src="{{url_for('static',filename='vector19.svg')}}"
+        />
+        <div class="follow-us5">Follow Us :</div>
+      </footer>
+
+      <div id="message" style="position: absolute;top: 160px;left: 320px;font-size: 18px;color: rgb(248, 26, 26);">{{ result }}</div>
+
+    </main>
+
+    <script>
+      function logout(){
+        window.location.href = "http://127.0.0.1:5000/user/log-out";
+      }
+      var homeContainer = document.getElementById("homeContainer");
+      if (homeContainer) {
+        homeContainer.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/home-page";
+        });
+      }
+      
+      var medShop = document.getElementById("medShop");
+      if (medShop) {
+        medShop.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/med-detail";
+        });
+      }
+      
+      var contactUs = document.getElementById("contactUs");
+      if (contactUs) {
+        contactUs.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/contact-us";
+        });
+      }
+      
+      var loginButton = document.getElementById("loginButton");
+      if (loginButton) {
+        loginButton.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/user/log-in";
+        });
+      }
+      
+
+      </script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{url_for('static',filename='global.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='profile-page.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria Serif:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="profile-page">
+      <div class="nav-bar1">
+        <div class="logo1">
+          <img
+            class="logo-item"
+            alt=""
+            src="{{url_for('static',filename='rectangle-1@2x.png')}}"
+          />
+          <div class="rktg-med1">
+            <span><span>RKTG</span><span class="span10"> </span></span
+            ><b class="med1">MED</b>
+          </div>
+          <div class="logo-inner"></div>
+        </div>
+        <div class="nav-buttons1">
+          <div class="home2" id="homeContainer"><b class="home3">Home</b></div>
+          <b class="book-an-appointment1" id="bookAnAppointment"
+            >Book An Appointment</b
+          ><b class="home3" id="medshop">MedShop</b
+          ><b class="home3" id="about-us">About Us</b
+          ><b class="book-an-appointment1" id="contactUsText">Contact Us</b
+          ><b class="home3">Profile</b>
+          {% if session['user_name'] is none %} {% else %}
+          <button class="logout" onclick="logout()">
+            <img
+              src="{{url_for('static',filename='logout.png')}}"
+              width="50px"
+              height="60px"
+            />
+          </button>
+          {% endif %}
+        </div>
+        <div class="nav-bar-inner"></div>
+        <div class="line-div"></div>
+      </div>
+      <div class="info">
+        <form method="get" action="/my-order">
+        <input class="btn1" type="submit" onclick="get_orders()" value="Your Orders" >
+      </form>
+      <form method="get" action="my-appointment">
+        <input class="btn2" type="submit" onclick="get_apps()" value="Your Appointments">
+      </form>
+      </div>
+    </div>
+    <h1 class="my-profile">My Profile</h1>
+    <table class="user">
+      <tr>
+        <td id="left">User Name:</td>
+        <td>{{ user_name }}</td>
+      </tr>
+      <tr>
+        <td id="left">Name:</td>
+        <td id="right">{{ name }}</td>
+      </tr>
+      <tr>
+        <td id="left">Email:</td>
+        <td id="right">{{ email }}</td>
+      </tr>
+      <tr>
+        <td id="left">Mobile:</td>
+        <td id="right">{{ mob_number }}</td>
+      </tr>
+      <tr>
+        <td id="left">Gender:</td>
+        <td id="right">{{ sex }}</td>
+      </tr>
+      <tr>
+        <td id="left">DOB:</td>
+        <td id="right">{{ dob }}</td>
+      </tr>
+    </table>
+    {% if controller is none %}
+    <table class="newtable">
+      <thead>
+        <tr>
+          <th>Doctor ID</th>
+          <th>Doctor Name</th>
+          <th>Appointment Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in data %}
+        <tr>
+          <td>{{ item.Doctor_ID }}</td>
+          <td>{{ item.Doctor_Name }}</td>
+          <td>{{ item.appointment_date }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </table>
+    {% else %}
+    {% if table is none %}
+    {% else %}
+    <table class="newtable">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Drug Name</th>
+          <th>Status</th>
+          <th>Order quantity</th>
+          <th>Expected Dilivery Date</th>  
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in data %}
+        <tr></tr>
+          <td>{{ item.order_id}}</td>
+          <td>{{ item.drug_name }}</td>
+          <td>{{ item.status }}</td>
+          <td>{{item.order_quantity}}</td>
+          <td>{{item.shipment_date}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+    {% endif %}
+    <script>
+      function logout(){
+        window.location.href = "http://127.0.0.1:5000/user/log-out";
+      }
+      var homeContainer = document.getElementById("homeContainer");
+      if (homeContainer) {
+        homeContainer.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/home-page";
+        });
+      }
+      var bookAnAppointment = document.getElementById("bookAnAppointment");
+      if (bookAnAppointment) {
+        bookAnAppointment.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/select-speciality";
+        });
+      }
+      var contactUsText = document.getElementById("contactUsText");
+      if (contactUsText) {
+        contactUsText.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/contact-us";
+        });
+      }
+      var medShop = document.getElementById("medshop");
+      if (medShop) {
+        medShop.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/med-detail";
+        });
+      }
+      var ab = document.getElementById("about-us");
+      if (ab) {
+        ab.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/about-us";
+        });
+      }
+      var tab=document.getElementById("newtable");
+      function get_orders(){
+        tab.style.display = "inherit";
+        window.location.href="http://127.0.0.1:5000/my-order";
+      }
+      function get_apps(){
+        tab.style.display="inherit";
+        tab.style.backgroundColor= "#FFFFFF"
+        window.location.href="http://127.0.0.1:5000/my-appointment";
+      }
+    </script>
+  </body>
+</html>

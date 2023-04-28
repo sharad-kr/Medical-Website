@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{url_for('static',filename='global.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='login-page.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria Serif:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login-page">
+      <div id="iflogin" style="display: inherit">
+        <b class="username1"
+          ><span>Username </span><span class="span">*</span></b
+        >
+
+        <b class="password1"
+          ><span>Password </span><span class="span">*</span></b
+        ><b class="login">Login</b>
+        <form class="forms" action="/user/log-in" id="login-form" method="post">
+          <input
+            class="login-page-item"
+            type="text"
+            placeholder="Enter Name"
+            name="Name"
+            required
+          />
+          <input
+            class="login-page-child5"
+            type="password"
+            placeholder="Enter Password"
+            required
+            name="Password"
+          /><img
+            class="healthiconsui-user-profile"
+            alt=""
+            src="{{url_for('static',filename='healthiconsuiuserprofile.svg')}}"
+          />
+          <button
+            type="submit"
+            id="login-button"
+            class="ob-formslogin"
+            onclick=""
+          >
+            <div class="name1">
+              <span class="login1">Login</span>
+            </div>
+          </button>
+        </form>
+        <a
+          id="notlogin"
+          onclick="toggle()"
+          style="
+            position: absolute;
+            left: 400px;
+            top: 570px;
+            color: rgb(4, 117, 152);
+            background-color: none;
+            border: none;
+            cursor: unset;
+          "
+          ><u>Don't have an Account?</u></a
+        >
+      </div>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img
+            class="logo-child"
+            alt=""
+            src="{{url_for('static',filename='rectangle-1@2x.png')}}"
+          /><b class="rktg-med"
+            ><span class="rktg"
+              ><span class="rktg1">RKTG</span><span class="span8"> </span></span
+            ><b class="med">MED</b></b
+          >
+        </div>
+        <div class="nav-buttons">
+          <div class="home" id="homeContainer">
+            <a class="about-us" href="/">Home</a>
+          </div>
+          <a
+            class="book-an-appointment"
+            href="http://127.0.0.1:5000/select-speciality"
+            id="bookAnAppointment"
+            >Book An Appointment</a
+          ><a
+            class="book-an-appointment"
+            href="http://127.0.0.1:5000/med-detail"
+            id="medShop"
+            >MedShop</a
+          ><a class="about-us" href="http://127.0.0.1:5000/about-us">About Us</a
+          ><a
+            class="book-an-appointment"
+            href="http://127.0.0.1:5000/contact-us"
+            id="contactUs"
+            >Contact Us</a
+          >
+        </div>
+        <img
+          class="nav-bar-child"
+          alt=""
+          src="{{url_for('static',filename='line-1@2x.png')}}"
+        /><img
+          class="nav-bar-item"
+          alt=""
+          src="{{url_for('static',filename='line-2@2x.png')}}"
+        />
+      </nav>
+      <div
+        class="error"
+        id="errormsg"
+        style="
+          display: inherit;
+          position: absolute;
+          left: 850px;
+          top: 365px;
+          height: 100px;
+          width: 300px;
+          background-color: #FFFFFF;
+          color: rgb(155, 24, 24);
+          align-items: center;
+          padding: 10px 20px;
+        "
+      >
+        {{Error}}
+      </div>
+    </div>
+    <script>
+      var div1 = document.getElementById("iflogin");
+      var div2 = document.getElementById("ifnotlogin");
+      //make login and sign-up different pages
+      var msg = document.getElementById("errormsg");
+      function toggle(){
+        window.location.href = "/user/sign-up";
+        msg.style.display = "none";
+      }
+
+
+      var homeContainer = document.getElementById("homeContainer");
+      if (homeContainer) {
+        homeContainer.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/home-page";
+        });
+      }
+
+      var bookAnAppointment = document.getElementById("bookAnAppointment");
+      if (bookAnAppointment) {
+        bookAnAppointment.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/select-speciality";
+        });
+      }
+
+      var medShop = document.getElementById("medShop");
+      if (medShop) {
+        medShop.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/med-detail";
+        });
+      }
+
+      var contactUs = document.getElementById("contactUs");
+      if (contactUs) {
+        contactUs.addEventListener("click", function (e) {
+          window.location.href = "http://127.0.0.1:5000/contact-us";
+        });
+      }
+    </script>
+  </body>
+</html>
