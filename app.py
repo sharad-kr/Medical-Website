@@ -94,6 +94,9 @@ class user_model():
         if len(data['symptom']) != 0:
             translation = translator.translate(
                 data['symptom'], src=translator.detect(data['symptom']).lang, dest='en')
+            translation = translation.text
+        else:
+            translation = data['symptom']
             
         self.cur1.execute(f"SELECT Doctor_Name FROM doclist WHERE Doctor_ID = '{data['Doctor_ID']}'")
         doc_name = self.cur1.fetchall()
