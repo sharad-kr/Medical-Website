@@ -103,7 +103,7 @@ class user_model():
         doc_name = doc_name[0][0]
         # return doc_name
         self.cur.execute(
-            f"INSERT INTO appointment(Doctor_Name,user_name,appointment_date,Doctor_ID,symptom) VALUES('{doc_name}','{session['user_name']}','{data['appointment_date']}','{data['Doctor_ID']}','{translation.text}')")
+            f"INSERT INTO appointment(Doctor_Name,user_name,appointment_date,Doctor_ID,symptom) VALUES('{doc_name}','{session['user_name']}','{data['appointment_date']}','{data['Doctor_ID']}','{translation}')")
         self.cur1.execute("SELECT Doctor_ID FROM Doctor_duty")
         result = self.cur1.fetchall()
         column_list = [row[0] for row in result]
